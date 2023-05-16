@@ -1,0 +1,20 @@
+/**on changeant le type de display à grid,
+*on choisit le model de box grid avec un nouveau système de mise en boite
+* ce choix de modèle de boite se fait au niveau du contenaire parent
+*/
+.container {
+    /* le parent des items en mode grid*/
+    display: grid;
+    grid-template-columns: 150px 3fr;
+    /* */
+    grid-template-rows: 3fr 3fr 3fr;
+}
+
+.items {
+    border: solid red;
+}
+
+.items:nth-child(1),
+.items:nth-child(2) {
+    background-color: rgb(20, 139, 139);
+}
